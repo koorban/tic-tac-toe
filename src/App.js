@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import AppJumboTron from './AppJumboTron';
+import Box from './Box';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <AppJumboTron />
+      <Container>
+        <Row>
+          <Col>
+            <Box id={0} />
+          </Col>
+          <Col>
+            <Box id={1} />
+          </Col>
+          <Col>
+            <Box id={2} />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Box id={3} />
+          </Col>
+          <Col>
+            <Box id={4} />
+          </Col>
+          <Col>
+            <Box id={5} />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Box id={6} />
+          </Col>
+          <Col>
+            <Box id={7} />
+          </Col>
+          <Col>
+            <Box id={8} />
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
 
